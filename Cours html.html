@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Apllication apprentissage html</title>
+    <style>                                  
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            text-align: center;
+            background-image: url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        button {
+            padding:1rem;
+            margin:1rem;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:40px;
+        }
+        p {
+            font-size:30px;
+        }
+        h1 {
+            font-size:60px;
+        }
+        h2 {
+            font-size:50px;
+        }
+        h3 {
+            font-size:40px;
+        }
+
+        .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+    }
+       
+    </style>
+    <script>
+        let guess = 'Arno_1802'
+        let password
+        function passWord () {
+            while (password !== guess) {
+             password = prompt('Enter your password')
+            if (password !== guess) {
+                console.log ('Not the right password, try again')
+            } 
+        }
+        console.log('The website is open')
+    
+        }
+        passWord()
+    </script>
+        
+       
+</head>
+<body>
+    <h1>Voici mon site internet</h1>         
+    <h2>J'aime la programmation</h2>
+    <h3>Identité</h3>
+    <p>Je m'appelle Arnaud Bouillon, j'ai 21 ans et je suis en passe de devenir un sofware engineer. </p>
+    <div class="Imagebouton">
+        <img src="https://media.giphy.com/media/L5DcKYRRpPtAY/giphy.gif" alt="Sheldon">
+    </div>
+    <a href="Cours html part2.html"><button>Cliquez ici pour en savoir plus sur mon profil et mes compétences</button></a>
+</body>
+</html>
